@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="firstName" class="form-control" formControlName="firstName" required placeholder="firstName: name@example.com">
+                </div>
+                <div class="form-group">
+                    <input type="LastName" class="form-control" formControlName="lastName" required placeholder="lastName : Sri Vastava">
+                </div>
+                <div class="form-group">
+                  <input type="marksObtainsOutOf" class="form-control" formControlName="marksObtainsOutOf" required placeholder="marksObtainsOutOf: 429/500">
+              </div>
+                <button type="submit" [disabled]="false" class="btn btn-primary btn-block">Login</button>
+            </form>
+</div>
